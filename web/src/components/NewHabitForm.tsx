@@ -21,7 +21,7 @@ export function NewHabitForm() {
   async function createHabit(event: FormEvent) {
     event.preventDefault();
 
-    if (!title || weekDays.length === 0) {
+    if (!title.trim() || weekDays.length === 0) {
       return;
     }
 
